@@ -1,3 +1,10 @@
+# タイマーアプリ
+
+## 機能
+
+単純なタイマー機能
+残り時間〇分でアラーム音を鳴らす機能
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
