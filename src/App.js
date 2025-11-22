@@ -3,6 +3,7 @@ import "./App.css";
 import TimeSetter from "./TimeSetter";
 import AlarmSetter from "./AlarmSetter";
 import AlarmList from "./AlarmList";
+import alarmSoundFile from "./alarm.mp3";
 
 // ゼロパディングして2桁の文字列を返すヘルパー関数
 const padTime = (time) => time.toString().padStart(2, "0");
@@ -131,7 +132,7 @@ function App() {
       <header className="App-header">
         {/* <h1>タイマー</h1> */}
         {/* アラーム音の要素。publicフォルダに音声ファイルを配置してください */}
-        <audio ref={alarmSound} src="/alarm.mp3" preload="auto"></audio>
+        <audio ref={alarmSound} src={alarmSoundFile} preload="auto"></audio>
 
         <div className="timer-display">
           {displayMinutes}:{padTime(displaySeconds)}
