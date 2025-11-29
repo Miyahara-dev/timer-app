@@ -130,8 +130,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <h1>タイマー</h1> */}
-        {/* アラーム音の要素。publicフォルダに音声ファイルを配置してください */}
         <audio ref={alarmSound} src={alarmSoundFile} preload="auto"></audio>
 
         <div className="timer-display">
